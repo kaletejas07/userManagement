@@ -1,0 +1,21 @@
+<h1>Hello World! This is the hello page</h1>
+<%= 2+2 %>
+<br/>
+
+<%target = 'everyone' %>
+<%= "Hello there #{target}...."%>
+<br/>
+
+<% @array.each do |n| %>
+    <p><%= n*2 %></p>
+<% end %>
+
+<br/>
+<%= link_to("Index page", {:action=> 'index'}) %>
+
+<br/>
+
+ID: <%= @id%> <br/>
+ID: <%= params[:id]%><br/>
+Page: <%= @page%><br/>
+Next page: <%= @page.to_i + 1%><br/>
